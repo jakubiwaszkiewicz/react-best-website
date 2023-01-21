@@ -1,0 +1,62 @@
+$base-font: 'Exo 2', sans-serif
+$headline-font: 'Alegreya Sans', sans-serif
+
+$first-color: #FCFCFC
+$second-color: #FFA932
+$third-color: #253746
+
+$font-color: #B9DBF5
+
+
+nav
+  background-color: $third-color
+  width: 5rem
+  height: 100vh
+  position: fixed
+  display: flex
+  justify-content: center
+  align-items: center
+  opacity: 0.9
+  transition: width 0.2s ease-out 0.2s, opacity 0.2s ease-out 0.2s
+  ul
+    padding: 0
+    margin: 0
+    list-style: none
+    li
+      display: flex
+      justify-content: center
+      align-items: center
+      padding: 1rem 0
+      margin: 0 1rem
+      border-bottom: 1px solid $first-color
+      gap: 0
+      transition: gap 0.2s ease-out
+      cursor: pointer
+      .icon
+        min-width: 2rem
+        min-height: 2rem
+        color: $first-color
+      span
+        color: $first-color
+        opacity: 0
+        width: 0
+        height: 0
+        transition: opacity 0.2s ease-out, width 0.2s ease-out 0.2s, height 0.2s ease-out 0.2s
+        letter-spacing: 1px
+        text-transform: uppercase
+        font-family: $headline-font
+        font-weight: 500
+
+  &:hover
+    width: 24rem
+    opacity: 1
+    transition: width 0.2s ease-in, opacity 0.2s ease-in
+    ul
+      li
+        gap: 1rem
+        transition: gap 0.2s ease-in 0.4s
+        span
+          opacity: 1
+          width: 18rem
+          height: 1rem
+          transition: width 0.2s ease-in,  height 0.2s ease-in, opacity 0.2s ease-in 0.4s

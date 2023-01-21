@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap')
+
+$base-font: 'Exo 2', sans-serif
+$headline-font: 'Alegreya Sans', sans-serif
+
+$first-color: #FCFCFC
+$second-color: #FFA932
+$third-color: #253746
+
+$font-color: #B9DBF5
+
+root
+  font-size: 16px
+
+body
+  margin: 0
+  background-color: $first-color
+  box-sizing: border-box
+  font-family: $base-font
+  &::-webkit-scrollbar
+    width: 0.25rem
+  &::-webkit-scrollbar-track
+    background-color: $first-color
+  &::-webkit-scrollbar-track
+    background-color: $third-color
+
+h1, h2, h3, h4, h5
+  font-family: $headline-font
+
+p, span
+  font-family: $base-font
+
+.App
+  display: flex
+  flex-direction: row
+
+
+section
+  display: flex
+  flex-direction: column
+

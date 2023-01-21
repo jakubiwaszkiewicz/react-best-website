@@ -1,0 +1,60 @@
+nav {
+  background-color: #253746;
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+  transition: width 0.2s ease-out 0.2s, opacity 0.2s ease-out 0.2s;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  margin: 0 1rem;
+  border-bottom: 1px solid #FCFCFC;
+  gap: 0;
+  transition: gap 0.2s ease-out;
+  cursor: pointer;
+}
+nav ul li .icon {
+  min-width: 2rem;
+  min-height: 2rem;
+  color: #FCFCFC;
+}
+nav ul li span {
+  color: #FCFCFC;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition: opacity 0.2s ease-out, width 0.2s ease-out 0.2s, height 0.2s ease-out 0.2s;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 500;
+}
+nav:hover {
+  width: 24rem;
+  opacity: 1;
+  transition: width 0.2s ease-in, opacity 0.2s ease-in;
+}
+nav:hover ul li {
+  gap: 1rem;
+  transition: gap 0.2s ease-in 0.4s;
+}
+nav:hover ul li span {
+  opacity: 1;
+  width: 18rem;
+  height: 1rem;
+  transition: width 0.2s ease-in, height 0.2s ease-in, opacity 0.2s ease-in 0.4s;
+}
+
+/*# sourceMappingURL=NavBar.css.map */
