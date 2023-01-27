@@ -6,8 +6,8 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  opacity: 0.9;
   transition: width 0.2s ease-out 0.2s, opacity 0.2s ease-out 0.2s;
+  z-index: 3;
 }
 nav ul {
   padding: 0;
@@ -43,12 +43,11 @@ nav ul li span {
 }
 nav:hover {
   width: 24rem;
-  opacity: 1;
-  transition: width 0.2s ease-in, opacity 0.2s ease-in;
+  transition: width 0.2s ease-in;
 }
 nav:hover ul li {
   gap: 1rem;
-  transition: gap 0.2s ease-in 0.4s;
+  transition: gap 0.2s ease-in 0.2s;
 }
 nav:hover ul li span {
   opacity: 1;

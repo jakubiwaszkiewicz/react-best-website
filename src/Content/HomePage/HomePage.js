@@ -2,9 +2,26 @@ import React from 'react';
 import './HomePage.css'
 function HomePage() {
     return (
-        <div>
-
-        </div>
+        <section className="HomePage">
+            <div className="filter">
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+                <div className="firefly"></div>
+            </div>
+        </section>
     );
 }
 

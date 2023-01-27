@@ -16,8 +16,8 @@ nav
   display: flex
   justify-content: center
   align-items: center
-  opacity: 0.9
   transition: width 0.2s ease-out 0.2s, opacity 0.2s ease-out 0.2s
+  z-index: 3
   ul
     padding: 0
     margin: 0
@@ -49,12 +49,11 @@ nav
 
   &:hover
     width: 24rem
-    opacity: 1
-    transition: width 0.2s ease-in, opacity 0.2s ease-in
+    transition: width 0.2s ease-in
     ul
       li
         gap: 1rem
-        transition: gap 0.2s ease-in 0.4s
+        transition: gap 0.2s ease-in 0.2s
         span
           opacity: 1
           width: 18rem

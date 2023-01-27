@@ -3,6 +3,7 @@ import './NavBar.css'
 import { FaHome, FaProjectDiagram } from 'react-icons/fa'
 import { BiPaperPlane } from 'react-icons/bi'
 import { BsFillTelephoneFill } from 'react-icons/bs'
+import { BsFileEarmarkSpreadsheetFill } from 'react-icons/bs'
 
 
 const NavBar = () => {
@@ -20,6 +21,10 @@ const NavBar = () => {
                 <li>
                     <BiPaperPlane className="icon"/>
                     <span>Best Symposium on Education</span>
+                </li>
+                <li>
+                    <BsFileEarmarkSpreadsheetFill className="icon"/>
+                    <span>Dołącz do nas!</span>
                 </li>
                 <li>
                     <BsFillTelephoneFill className="icon"/>
